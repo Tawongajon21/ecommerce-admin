@@ -2,7 +2,7 @@
 
 
 import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel } from "@/components/ui/dropdown-menu"
-import { SizeColumn } from "./columns"
+import { ColorColumn } from "./columns"
 import { DropdownMenuItem, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu"
 import { Button } from "@/components/ui/button"
 import { Copy, Edit, MoreHorizontal, Trash } from "lucide-react"
@@ -13,7 +13,7 @@ import { useState } from "react"
 import { AlertModal } from "@/components/modals/alert-modal"
 
 interface CellActionProps{
-    data:SizeColumn
+    data:ColorColumn
 }
 export const CellAction:React.FC<CellActionProps>=({data})=>{
  const router= useRouter();
